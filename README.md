@@ -13,6 +13,7 @@ git clone https://github.com/rafaph/front-end-boilerplate.git
 * Install dependencies:
 
 ```shell
+cd front-end-boilerplate
 npm install
 ```
 
