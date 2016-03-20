@@ -19,7 +19,7 @@ npm install
 * Avaliable configurations:
 
 ```js
-// localized at ./config.js
+// found at ./config.js
 
 const OUTPUT = './static/';          //output directory
 
@@ -30,7 +30,7 @@ export default {
     entry: './assets/js/index.js',   //javascript entry point for webpack
     output: {                        //javascript output for webpack
       path: OUTPUT + 'js',           //javascript output path
-      filename: 'app.js'             //filename
+      filename: 'app.js'             //javascript filename
     },
     eslint: './assets/js/**/*.js'    //eslint glob
   },
