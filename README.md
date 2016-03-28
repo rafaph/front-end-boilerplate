@@ -44,7 +44,7 @@ export default {
     files: `${INPUT}/sass/**/*.scss` //sass entries
   },
   fonts: {
-    output: `${OUTPUT}fonts`,       //fonts directory output
+    output: `${OUTPUT}/fonts`,       //fonts directory output
     files: [
       `${INPUT}/fonts/**/*`         //fonts
     ]
