@@ -1,24 +1,25 @@
-const OUTPUT = './static/';
+const OUTPUT = './static';
+const INPUT = './assets';
 
 export default {
   debug: true,
   watch: false,
   js: {
-    entry: './assets/js/index.js',
+    entry: `${INPUT}/js/index.js`,
     output: {
-      path: `${OUTPUT}js`,
+      path: `${OUTPUT}/js`,
       filename: 'app.js'
     },
-    eslint: ['./assets/js/**/*.js', '!node_modules/**']
+    eslint: [`${INPUT}/js/**/*.js`, '!node_modules/**']
   },
   sass: {
-    output: `${OUTPUT}css`,
-    files: './assets/sass/**/*.scss'
+    output: `${OUTPUT}/css`,
+    files: `${INPUT}/sass/**/*.scss`
   },
   fonts: {
-    output: `${OUTPUT}fonts`,
+    output: `${OUTPUT}/fonts`,
     files: [
-      './assets/fonts/**/*'
+      `${INPUT}/fonts/**/*`
     ]
   }
 };
