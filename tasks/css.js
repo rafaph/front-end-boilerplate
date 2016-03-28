@@ -6,12 +6,12 @@ import config from './../config';
 
 gulp.task('clean:css', cb => {
   del([
-    config.sass.output + '/*'
-  ]).then(() => cb())
+    `${config.sass.output}/*`
+  ]).then(() => cb());
 });
 
 gulp.task('build:css', ['clean:css'], () => {
-  let b = gulp
+  const b = gulp
     .src(config.sass.files)
     .pipe(sass().on('error', sass.logError));
 

@@ -1,7 +1,7 @@
 import webpack from 'webpack';
 import config from './config';
 
-let webpackConfig = {
+const webpackConfig = {
   watch: config.watch,
   module: {
     loaders: [{
@@ -9,12 +9,12 @@ let webpackConfig = {
       exclude: [/node_modules/],
       loader: 'babel-loader'
     }, {
-        test: /\.html$/,
-        loader: 'raw'
-      }, {
-        test: /\.css$/,
-        loader: "css-loader"
-      }]
+      test: /\.html$/,
+      loader: 'raw'
+    }, {
+      test: /\.css$/,
+      loader: 'css-loader'
+    }]
   }
 };
 

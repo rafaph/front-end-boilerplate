@@ -6,17 +6,17 @@ export default {
   js: {
     entry: './assets/js/index.js',
     output: {
-      path: OUTPUT + 'js',
+      path: `${OUTPUT}js`,
       filename: 'app.js'
     },
-    eslint: './assets/js/**/*.js'
+    eslint: ['./assets/js/**/*.js', '!node_modules/**']
   },
   sass: {
-    output: OUTPUT + 'css',
+    output: `${OUTPUT}css`,
     files: './assets/sass/**/*.scss'
   },
   fonts: {
-    output: OUTPUT + 'fonts',
+    output: `${OUTPUT}fonts`,
     files: [
       './assets/fonts/**/*'
     ]
