@@ -30,17 +30,17 @@ export default {
   js: {
     entry: './assets/js/index.js',   //javascript entry point for webpack
     output: {                        //javascript output for webpack
-      path: OUTPUT + 'js',           //javascript output path
+      path: `${OUTPUT}js`,           //javascript output path
       filename: 'app.js'             //javascript filename
     },
     eslint: './assets/js/**/*.js'    //eslint glob
   },
   sass: {
-    output: OUTPUT + 'css',          //sass directory output
+    output: `${OUTPUT}css`,          //sass directory output
     files: './assets/sass/**/*.scss' //sass entries
   },
   fonts: {
-    output: OUTPUT + 'fonts',       //fonts directory output
+    output: `${OUTPUT}fonts`,       //fonts directory output
     files: [
       './assets/fonts/**/*'         //fonts
     ]
