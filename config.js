@@ -10,7 +10,10 @@ export default {
       path: `${OUTPUT}/js`,
       filename: 'app.js'
     },
-    eslint: [`${INPUT}/js/**/*.js`, '!node_modules/**']
+    eslint: [
+      `${INPUT}/js/**/*.js`,
+      '!node_modules/**'
+    ]
   },
   sass: {
     output: `${OUTPUT}/css`,
