@@ -17,8 +17,9 @@
     "babel-register": "^6.7.2",
     "css-loader": "^0.23.1",
     "del": "^2.2.0",
-    "eslint": "^2.5.1",
-    "eslint-config-airbnb": "^6.2.0",
+    "eslint": "^2.12.0",
+    "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-plugin-import": "^1.8.1",
     "gulp": "^3.9.1",
     "gulp-cssnano": "^2.1.1",
     "gulp-eslint": "^2.0.0",
@@ -27,6 +28,8 @@
     "node-sass": "^3.4.2",
     "raw-loader": "^0.5.1",
     "require-dir": "^0.3.0",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
     "supports-color": "^3.1.2",
     "webpack": "^1.12.14"
   }

@@ -13,7 +13,10 @@ const webpackConfig = {
       loader: 'raw'
     }, {
       test: /\.css$/,
-      loader: 'css-loader'
+      loader: ['css', 'style']
+    }, {
+        test: /\.scss$/,
+        loaders: ['sass', 'css', 'style']
     }]
   }
 };
